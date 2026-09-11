@@ -8,13 +8,11 @@
 
 A native macOS companion that puts the real Hermes CLI a gesture away.
 
-[**Release page**](https://github.com/LucidVacx/NotchPilot/releases) · [Releases](https://github.com/LucidVacx/NotchPilot/releases) · [Report an issue](https://github.com/LucidVacx/NotchPilot/issues)
+[**Download for macOS**](https://github.com/LucidVacx/NotchPilot/releases/latest) · [Releases](https://github.com/LucidVacx/NotchPilot/releases) · [Report an issue](https://github.com/LucidVacx/NotchPilot/issues)
 
 macOS 15+ · Apple silicon · Beta · Proprietary
 
 </div>
-
-> **Release status:** The download repository is ready. Public app downloads are pending; no binary is published yet.
 
 ## A terminal that stays out of the way
 
@@ -75,6 +73,6 @@ NotchPilot respects macOS Reduce Transparency. Explicit background colors drawn 
 
 ## License and credits
 
-**NotchPilot is intended for closed-source, proprietary distribution.** This repository contains release documentation, not the application's source code. It grants no open-source license to NotchPilot. App publication is pending completion of the release review.
+**NotchPilot is closed-source, proprietary software. All rights reserved.** This repository contains release documentation and links to app downloads; the application source code is private. No open-source license is granted to NotchPilot.
 
 The native terminal is powered by **SwiftTerm**, distributed under the MIT license. Its license is included with the app and in [third-party notices](THIRD_PARTY_NOTICES.md). Third-party components retain their respective licenses. NotchPilot is an independent companion and is not presented as an official Hermes product.
