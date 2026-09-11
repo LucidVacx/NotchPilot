@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2 — 2026-09-11
+
+- Moved the terminal header, including Settings and Hide, below the macOS menu bar with a small clearance gap.
+- Corrected top spacing on external displays while preserving the solid black notch connection.
+
 ## 0.3.1 — 2026-09-11
 
 First public binary release of the native terminal edition.
