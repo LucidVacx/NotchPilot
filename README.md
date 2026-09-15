@@ -10,7 +10,7 @@ A native macOS companion that puts the real Hermes CLI a gesture away.
 
 [**Download for macOS**](https://github.com/LucidVacx/NotchPilot/releases/latest) · [Releases](https://github.com/LucidVacx/NotchPilot/releases) · [Report an issue](https://github.com/LucidVacx/NotchPilot/issues)
 
-macOS 15+ · Apple silicon · Beta · Proprietary
+macOS 15+ · Apple silicon · MIT license
 
 </div>
 
@@ -55,24 +55,54 @@ NotchPilot checks `~/.local/bin/hermes`, then your login shell's PATH. If Hermes
 
 ## Troubleshooting
 
-**Hermes was not found**  
+**Hermes was not found**
 Install and configure Hermes CLI first, or point NotchPilot at its executable in Settings. NotchPilot does not include a Hermes desktop app.
 
-**The shortcut is not responding**  
+**The shortcut is not responding**
 Check that the global shortcut is enabled in Settings, or select an alternative shortcut if another app uses Option–Space. Avoid running multiple copies of NotchPilot.
 
-**I still see an old version**  
+**I still see an old version**
 Quit all existing copies, replace the app in Applications, and launch that copy rather than one in Downloads or a mounted DMG.
 
-**The background is completely black**  
+**The background is completely black**
 NotchPilot respects macOS Reduce Transparency. Explicit background colors drawn by terminal applications can also remain opaque.
 
 ## Feedback
 
 [Open an issue](https://github.com/LucidVacx/NotchPilot/issues/new) with your NotchPilot version, macOS version, display setup, input device and steps to reproduce. Remove credentials and private conversation content from screenshots or logs before posting.
 
+## Build from source
+
+Install Xcode and select it as the active developer directory. The source uses
+Swift Package Manager and pins SwiftTerm to version 1.19.0.
+
+```sh
+cd NativeApp
+export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
+swift build --product NotchPilot
+swift test
+zsh scripts/build-app.sh
+```
+
+The packaging script creates `NativeApp/outputs/NotchPilot.app` and
+`NativeApp/outputs/NotchPilot-beta.zip`. Run `zsh scripts/build-dmg.sh` from
+`NativeApp` to create the versioned installer and SHA-256 checksum.
+
+The app has one executable target and one test target. `Sources/NotchPilot`
+contains the panel controller, terminal session, SwiftUI views, gesture handling,
+and preferences. `Tests/HermesTerminalTests` covers the PTY lifecycle, reveal
+animation, wheel input, and panel transitions with local fixture processes.
+Physical gestures, display hot-plugging, input methods, and Hermes providers
+need manual testing.
+
 ## License and credits
 
-**NotchPilot is closed-source, proprietary software. All rights reserved.** This repository contains release documentation and links to app downloads; the application source code is private. No open-source license is granted to NotchPilot.
+NotchPilot source is available under the [MIT license](LICENSE).
 
-The native terminal is powered by **SwiftTerm**, distributed under the MIT license. Its license is included with the app and in [third-party notices](THIRD_PARTY_NOTICES.md). Third-party components retain their respective licenses. NotchPilot is an independent companion and is not presented as an official Hermes product.
+**Hermes** provides the agent, commands, tools, approvals and conversation history.
+It runs as a separately installed CLI; NotchPilot does not bundle it.
+**SwiftTerm** provides the native terminal emulator and PTY transport under MIT.
+Its full license is included in the app and in
+[third-party notices](THIRD_PARTY_NOTICES.md).
+
+NotchPilot is an independent companion, not an official Hermes product.

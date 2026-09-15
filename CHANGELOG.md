@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Published the native app source under the MIT license.
+- Removed the retired chat UI, gateway integrations, web prototype, and unused build targets.
+- Reduced the app to one executable and its terminal/panel regression tests.
+
 ## 0.3.2 — 2026-09-11
 
 - Moved the terminal header, including Settings and Hide, below the macOS menu bar with a small clearance gap.
