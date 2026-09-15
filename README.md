@@ -8,7 +8,7 @@
 
 A native macOS companion that puts the real Hermes CLI a gesture away.
 
-[**Download for macOS**](https://github.com/LucidVacx/NotchPilot/releases/latest) · [Releases](https://github.com/LucidVacx/NotchPilot/releases) · [Report an issue](https://github.com/LucidVacx/NotchPilot/issues)
+[Report an issue](https://github.com/LucidVacx/NotchPilot/issues)
 
 macOS 15+ · Apple silicon · MIT license
 
@@ -32,17 +32,19 @@ NotchPilot runs your locally installed Hermes CLI inside a native terminal. Herm
 | Mac | Apple silicon (M-series) |
 | macOS | 15 Sequoia or later |
 | Hermes | Hermes CLI installed and configured locally |
+| Build tools | Xcode 16 or later |
 
-Intel Macs are not supported by this release. No Xcode or developer tools are needed to use the app.
+## Build and run
 
-## Install or update
+1. Clone this repository and open `NativeApp/NotchPilot.xcodeproj` in Xcode.
+2. Let Xcode resolve the pinned SwiftTerm dependency. Approve its build-tool plugin when prompted.
+3. Select the **NotchPilot** scheme and **My Mac** destination.
+4. Press **⌘R** to build and launch. Use **⌘U** to run the tests.
 
-1. [Download the latest DMG](https://github.com/LucidVacx/NotchPilot/releases/latest).
-2. If updating, quit your existing NotchPilot first.
-3. Open the DMG and drag **NotchPilot** onto **Applications**. Choose **Replace** when updating.
-4. Launch NotchPilot from Applications, then eject the disk image.
+Hermes must be installed and configured separately. Quit any other running copy
+of NotchPilot before launching from Xcode.
 
-This beta is ad-hoc signed and **not Apple-notarized**. macOS may block its first launch. After checking that you downloaded it from this repository, use **System Settings → Privacy & Security → Open Anyway** if that option is offered. Do not disable Gatekeeper globally.
+This project is distributed as source. No prebuilt installer is provided.
 
 ## Get started
 
@@ -62,7 +64,7 @@ Install and configure Hermes CLI first, or point NotchPilot at its executable in
 Check that the global shortcut is enabled in Settings, or select an alternative shortcut if another app uses Option–Space. Avoid running multiple copies of NotchPilot.
 
 **I still see an old version**
-Quit all existing copies, replace the app in Applications, and launch that copy rather than one in Downloads or a mounted DMG.
+Quit other running copies, then build and run the current checkout from Xcode.
 
 **The background is completely black**
 NotchPilot respects macOS Reduce Transparency. Explicit background colors drawn by terminal applications can also remain opaque.
@@ -71,29 +73,15 @@ NotchPilot respects macOS Reduce Transparency. Explicit background colors drawn 
 
 [Open an issue](https://github.com/LucidVacx/NotchPilot/issues/new) with your NotchPilot version, macOS version, display setup, input device and steps to reproduce. Remove credentials and private conversation content from screenshots or logs before posting.
 
-## Build from source
+## Project layout
 
-Install Xcode and select it as the active developer directory. The source uses
-Swift Package Manager and pins SwiftTerm to version 1.19.0.
+`NativeApp/Sources/NotchPilot` contains the panel controller, terminal session,
+SwiftUI views, gesture handling and preferences. The Xcode project pins SwiftTerm
+to version 1.19.0 and includes both MIT license files as app resources.
 
-```sh
-cd NativeApp
-export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
-swift build --product NotchPilot
-swift test
-zsh scripts/build-app.sh
-```
-
-The packaging script creates `NativeApp/outputs/NotchPilot.app` and
-`NativeApp/outputs/NotchPilot-beta.zip`. Run `zsh scripts/build-dmg.sh` from
-`NativeApp` to create the versioned installer and SHA-256 checksum.
-
-The app has one executable target and one test target. `Sources/NotchPilot`
-contains the panel controller, terminal session, SwiftUI views, gesture handling,
-and preferences. `Tests/HermesTerminalTests` covers the PTY lifecycle, reveal
-animation, wheel input, and panel transitions with local fixture processes.
-Physical gestures, display hot-plugging, input methods, and Hermes providers
-need manual testing.
+`NativeApp/Tests/HermesTerminalTests` covers the PTY lifecycle, reveal animation,
+wheel input and panel transitions with local fixture processes. Physical gestures,
+display hot-plugging, input methods and Hermes providers need manual testing.
 
 ## License and credits
 

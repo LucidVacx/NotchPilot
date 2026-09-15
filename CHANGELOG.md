@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Switched to Xcode-only source builds and removed prebuilt installers and packaging scripts.
+
 - Published the native app source under the MIT license.
 - Removed the retired chat UI, gateway integrations, web prototype, and unused build targets.
 - Reduced the app to one executable and its terminal/panel regression tests.

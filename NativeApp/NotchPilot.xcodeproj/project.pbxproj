@@ -1,0 +1,126 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* AppModel.swift */; };
+		A10000000000000000000002 /* GlobalShortcutMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* GlobalShortcutMonitor.swift */; };
+		A10000000000000000000003 /* HermesTerminalSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* HermesTerminalSession.swift */; };
+		A10000000000000000000004 /* NotchPanelRevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* NotchPanelRevealAnimator.swift */; };
+		A10000000000000000000005 /* NotchPilotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* NotchPilotApp.swift */; };
+		A10000000000000000000006 /* NotchPresentationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* NotchPresentationState.swift */; };
+		A10000000000000000000007 /* NotchPullGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* NotchPullGesture.swift */; };
+		A10000000000000000000008 /* NotchTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* NotchTheme.swift */; };
+		A10000000000000000000009 /* PanelRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* PanelRootView.swift */; };
+		A10000000000000000000010 /* SettingsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* SettingsRootView.swift */; };
+		A10000000000000000000011 /* TerminalSurfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* TerminalSurfaceView.swift */; };
+		A10000000000000000000012 /* TopEdgePanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* TopEdgePanelController.swift */; };
+		A10000000000000000000013 /* HermesTerminalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* HermesTerminalTests.swift */; };
+		A10000000000000000000014 /* NotchRevealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* NotchRevealTests.swift */; };
+		A10000000000000000000015 /* NotchWheelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* NotchWheelTests.swift */; };
+		A10000000000000000000016 /* PanelControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000016 /* PanelControllerTests.swift */; };
+		A10000000000000000000017 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000017 /* LICENSE */; };
+		A10000000000000000000018 /* SwiftTerm-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000018 /* SwiftTerm-LICENSE.txt */; };
+		A10000000000000000000019 /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = A70000000000000000000001 /* SwiftTerm */; };
+		A10000000000000000000020 /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = A70000000000000000000002 /* SwiftTerm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A80000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A40000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50000000000000000000001;
+			remoteInfo = NotchPilot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* GlobalShortcutMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalShortcutMonitor.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* HermesTerminalSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesTerminalSession.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* NotchPanelRevealAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchPanelRevealAnimator.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* NotchPilotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchPilotApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* NotchPresentationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchPresentationState.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* NotchPullGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchPullGesture.swift; sourceTree = "<group>"; };
+		A20000000000000000000008 /* NotchTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchTheme.swift; sourceTree = "<group>"; };
+		A20000000000000000000009 /* PanelRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelRootView.swift; sourceTree = "<group>"; };
+		A20000000000000000000010 /* SettingsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRootView.swift; sourceTree = "<group>"; };
+		A20000000000000000000011 /* TerminalSurfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalSurfaceView.swift; sourceTree = "<group>"; };
+		A20000000000000000000012 /* TopEdgePanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopEdgePanelController.swift; sourceTree = "<group>"; };
+		A20000000000000000000013 /* HermesTerminalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesTerminalTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* NotchRevealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchRevealTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000015 /* NotchWheelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchWheelTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000016 /* PanelControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelControllerTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000017 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = SOURCE_ROOT; };
+		A20000000000000000000018 /* SwiftTerm-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftTerm-LICENSE.txt; sourceTree = "<group>"; };
+		A20000000000000000000019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000020 /* NotchPilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchPilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000021 /* HermesTerminalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesTerminalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000019 /* SwiftTerm in Frameworks */, ); runOnlyForDeploymentPostprocessing = 0; };
+		A30000000000000000000002 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000020 /* SwiftTerm in Frameworks */, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A90000000000000000000001 = { isa = PBXGroup; children = (A90000000000000000000002 /* Sources */, A90000000000000000000003 /* Tests */, A90000000000000000000004 /* Resources */, A90000000000000000000005 /* Products */, ); sourceTree = "<group>"; };
+		A90000000000000000000002 /* Sources */ = { isa = PBXGroup; children = (A20000000000000000000001, A20000000000000000000002, A20000000000000000000003, A20000000000000000000004, A20000000000000000000005, A20000000000000000000006, A20000000000000000000007, A20000000000000000000008, A20000000000000000000009, A20000000000000000000010, A20000000000000000000011, A20000000000000000000012, ); name = Sources; path = Sources/NotchPilot; sourceTree = "<group>"; };
+		A90000000000000000000003 /* Tests */ = { isa = PBXGroup; children = (A20000000000000000000013, A20000000000000000000014, A20000000000000000000015, A20000000000000000000016, ); name = Tests; path = Tests/HermesTerminalTests; sourceTree = "<group>"; };
+		A90000000000000000000004 /* Resources */ = { isa = PBXGroup; children = (A20000000000000000000019 /* Info.plist */, A20000000000000000000017 /* LICENSE */, A90000000000000000000006 /* ThirdParty */, ); name = Resources; path = Resources; sourceTree = "<group>"; };
+		A90000000000000000000005 /* Products */ = { isa = PBXGroup; children = (A20000000000000000000020 /* NotchPilot.app */, A20000000000000000000021 /* HermesTerminalTests.xctest */, ); name = Products; sourceTree = "<group>"; };
+		A90000000000000000000006 /* ThirdParty */ = { isa = PBXGroup; children = (A20000000000000000000018 /* SwiftTerm-LICENSE.txt */, ); name = ThirdParty; path = ThirdParty; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* NotchPilot */ = { isa = PBXNativeTarget; buildConfigurationList = A60000000000000000000001 /* Build configuration list for PBXNativeTarget \"NotchPilot\" */; buildPhases = (A30000000000000000000001 /* Frameworks */, A30000000000000000000003 /* Sources */, A30000000000000000000004 /* Resources */, ); buildRules = (); dependencies = (); name = NotchPilot; packageProductDependencies = (A70000000000000000000001 /* SwiftTerm */, ); productName = NotchPilot; productReference = A20000000000000000000020 /* NotchPilot.app */; productType = "com.apple.product-type.application"; };
+		A50000000000000000000002 /* HermesTerminalTests */ = { isa = PBXNativeTarget; buildConfigurationList = A60000000000000000000002 /* Build configuration list for PBXNativeTarget \"HermesTerminalTests\" */; buildPhases = (A30000000000000000000002 /* Frameworks */, A30000000000000000000005 /* Sources */, ); buildRules = (); dependencies = (A80000000000000000000002 /* PBXTargetDependency */, ); name = HermesTerminalTests; packageProductDependencies = (A70000000000000000000002 /* SwiftTerm */, ); productName = HermesTerminalTests; productReference = A20000000000000000000021 /* HermesTerminalTests.xctest */; productType = "com.apple.product-type.bundle.unit-test"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A40000000000000000000001 /* Project object */ = { isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = { A50000000000000000000001 = { CreatedOnToolsVersion = 16.0; }; A50000000000000000000002 = { CreatedOnToolsVersion = 16.0; TestTargetID = A50000000000000000000001; }; }; }; buildConfigurationList = A60000000000000000000003 /* Build configuration list for PBXProject \"NotchPilot\" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, ); mainGroup = A90000000000000000000001; packageReferences = (A70000000000000000000003 /* XCRemoteSwiftPackageReference \"SwiftTerm\" */, ); productRefGroup = A90000000000000000000005 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (A50000000000000000000001 /* NotchPilot */, A50000000000000000000002 /* HermesTerminalTests */, ); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30000000000000000000004 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000017 /* LICENSE in Resources */, A10000000000000000000018 /* SwiftTerm-LICENSE.txt in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30000000000000000000003 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001, A10000000000000000000002, A10000000000000000000003, A10000000000000000000004, A10000000000000000000005, A10000000000000000000006, A10000000000000000000007, A10000000000000000000008, A10000000000000000000009, A10000000000000000000010, A10000000000000000000011, A10000000000000000000012, ); runOnlyForDeploymentPostprocessing = 0; };
+		A30000000000000000000005 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000013, A10000000000000000000014, A10000000000000000000015, A10000000000000000000016, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80000000000000000000002 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A50000000000000000000001 /* NotchPilot */; targetProxy = A80000000000000000000001 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A60000000000000000000004 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; MACOSX_DEPLOYMENT_TARGET = 15.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; }; name = Debug; };
+		A60000000000000000000005 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; MACOSX_DEPLOYMENT_TARGET = 15.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; }; name = Release; };
+		A60000000000000000000006 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ARCHS = arm64; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; DEVELOPMENT_TEAM = ""; ENABLE_TESTABILITY = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Resources/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = com.hanto.NotchPilot; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; SWIFT_VERSION = 5.0; }; name = Debug; };
+		A60000000000000000000007 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ARCHS = arm64; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Resources/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = com.hanto.NotchPilot; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 5.0; }; name = Release; };
+		A60000000000000000000008 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ARCHS = arm64; BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = YES; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = com.hanto.NotchPilotTests; PRODUCT_NAME = "$(TARGET_NAME)"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotchPilot.app/Contents/MacOS/NotchPilot"; SWIFT_VERSION = 5.0; TEST_TARGET_NAME = NotchPilot; }; name = Debug; };
+		A60000000000000000000009 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ARCHS = arm64; BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = YES; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @executable_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = com.hanto.NotchPilotTests; PRODUCT_NAME = "$(TARGET_NAME)"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotchPilot.app/Contents/MacOS/NotchPilot"; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 5.0; TEST_TARGET_NAME = NotchPilot; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60000000000000000000001 /* Build configuration list for PBXNativeTarget \"NotchPilot\" */ = {isa = XCConfigurationList; buildConfigurations = (A60000000000000000000006 /* Debug */, A60000000000000000000007 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A60000000000000000000002 /* Build configuration list for PBXNativeTarget \"HermesTerminalTests\" */ = {isa = XCConfigurationList; buildConfigurations = (A60000000000000000000008 /* Debug */, A60000000000000000000009 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A60000000000000000000003 /* Build configuration list for PBXProject \"NotchPilot\" */ = {isa = XCConfigurationList; buildConfigurations = (A60000000000000000000004 /* Debug */, A60000000000000000000005 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A70000000000000000000003 /* XCRemoteSwiftPackageReference \"SwiftTerm\" */ = {isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/migueldeicaza/SwiftTerm.git"; requirement = { kind = exactVersion; version = 1.19.0; }; };
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A70000000000000000000001 /* SwiftTerm */ = {isa = XCSwiftPackageProductDependency; package = A70000000000000000000003 /* XCRemoteSwiftPackageReference \"SwiftTerm\" */; productName = SwiftTerm; };
+		A70000000000000000000002 /* SwiftTerm */ = {isa = XCSwiftPackageProductDependency; package = A70000000000000000000003 /* XCRemoteSwiftPackageReference \"SwiftTerm\" */; productName = SwiftTerm; };
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A40000000000000000000001 /* Project object */;
+}
